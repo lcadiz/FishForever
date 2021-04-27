@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="TeamNormanPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>app.model.Area</class>
+    <class>app.model.LoanType</class>
+    <class>app.model.MemberGroup</class>
+    <class>app.model.DueDate</class>
+    <class>app.model.ScheduleType</class>
+    <class>app.model.SalarySchedule</class>
+    <class>app.model.SalaryScheduleDay</class>
+    <class>app.model.DayValue</class>
+    <class>app.model.MemberModel</class>
+    <class>app.model.Loan</class>
+    <class>app.model.Translog</class>
+    <class>app.model.LoanLedger</class>
+    <class>app.model.Province</class>
+    <class>app.model.City</class>
+    <class>app.model.Barangay</class>
+    <class>app.model.Gender</class>
+    <class>app.model.CivilStatus</class>
+    <class>app.model.MemberBusiness</class>
+    <class>app.model.MemberReference</class>
+    <class>app.model.MemberProperties</class>
+    <class>app.model.Collateral</class>
+    <class>app.model.MemberCollateral</class>
+    <class>app.model.House</class>
+    <class>app.model.MemberFamily</class>
+    <class>app.model.PaymentMode</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3307/tndb?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="Orange1234@"/>
+    </properties>
+  </persistence-unit>
+</persistence>
